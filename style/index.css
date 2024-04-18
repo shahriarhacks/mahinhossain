@@ -1,0 +1,119 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+}
+
+header .navigation-bar {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1004;
+}
+
+#drawer {
+  width: 60%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -60%;
+  background-color: #00000073;
+  color: #fff;
+  overflow-x: hidden;
+  z-index: 1005;
+}
+
+#drawer nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 35px 0;
+}
+
+#drawer nav ul li {
+  padding: 15px;
+}
+
+#drawer nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#closeDrawer {
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  border: none;
+  background: transparent;
+  color: #fff;
+}
+
+#toggleDrawer {
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+  padding: 5px 10px;
+  z-index: 1001;
+}
+
+#header-video video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+#header-title-data {
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  color: white;
+}
+#header-title-data h1 {
+  font-size: 2.5em;
+}
+#header-title-data p {
+  font-size: 1em;
+  width: 80%;
+  margin: 0 auto;
+}
+#nav-logo {
+  width: 15rem;
+  margin-top: 10px;
+}
+
+/* Drawer nav items animation part -----------> */
+
+#drawer-nav-ite1,
+#drawer-nav-ite2,
+#drawer-nav-ite3,
+#drawer-nav-ite4,
+#drawer-nav-ite5,
+#drawer-nav-ite6,
+#drawer-nav-ite7,
+#drawer-nav-ite8 {
+  position: relative;
+  left: -100%;
+  transition: 800ms;
+  transition-delay: 1s;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 576px) {
+  #toggleDrawer {
+    font-size: 20px;
+    padding: 5px 8px;
+  }
+  #nav-logo {
+    width: 10rem;
+  }
+}
