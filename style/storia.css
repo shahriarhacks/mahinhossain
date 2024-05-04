@@ -5,13 +5,40 @@ body {
 }
 #hero {
   background-color: #222;
+  position: relative;
 }
 #storio-header-img img {
   width: 100%;
-  height: 80vh;
-  object-fit: cover;
-  margin-top: 102px;
+  height: 90vh;
+  margin-top: 370px;
 }
+
+#storia-header-data-container {
+  width: 70%;
+  height: 150px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 150px;
+  margin: 0 16%;
+}
+#storia-header-data1 {
+  padding-left: 4%;
+}
+#storia-header-data1 > h1 {
+  font-size: 40px;
+  color: #000000;
+}
+#storia-header-data2 {
+  width: 100%;
+  height: 80%;
+  background-color: #222222;
+  color: #ffffff;
+  border-left: 5px solid #f18a5a;
+}
+#storia-header-data2 > h1 {
+  padding: 25px 0px 0px 50px;
+}
+
 #section-container > div > p {
   text-align: justify;
 }
@@ -37,6 +64,27 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  #storio-header-img img {
+    margin-top: 240px;
+  }
+  #storia-header-data-container {
+    width: 95%;
+    height: 100px;
+    top: 100px;
+    margin: 0 2%;
+  }
+
+  #storia-header-data1 > h1 {
+    font-size: 18px;
+  }
+  #storia-header-data2 {
+    height: 90%;
+  }
+  #storia-header-data2 > h1 {
+    font-size: 13px;
+    padding: 15px;
+  }
+
   #storio-header-img img {
     height: 100%;
   }
@@ -64,6 +112,32 @@ body {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 900px) {
+  #storio-header-img img {
+    margin-top: 340px;
+  }
+  #storia-header-data-container {
+    width: 95%;
+    height: 150px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 120px;
+    margin: 0 2%;
+  }
+  #storia-header-data1 {
+    padding-left: 4%;
+  }
+  #storia-header-data1 > h1 {
+    font-size: 30px;
+    color: #000000;
+  }
+  #storia-header-data2 {
+    height: 90%;
+  }
+  #storia-header-data2 > h1 {
+    font-size: 20px;
+    padding: 25px 0px 0px 20px;
+  }
+
   #section-container {
     gap: 1.5rem;
   }
@@ -98,6 +172,20 @@ body {
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1500px) {
+  #storia-header-data-container {
+    width: 80%;
+    height: 150px;
+    margin: 0 10%;
+  }
+
+  #storia-header-data1 > h1 {
+    font-size: 40px;
+    color: #000000;
+  }
+  #storia-header-data2 > h1 {
+    padding: 25px 0px 0px 28px;
+  }
+
   #section-container {
     gap: 2rem;
   }
